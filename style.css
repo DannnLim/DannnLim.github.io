@@ -1,0 +1,280 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white !important;
+    margin: 0;
+    padding: 0;
+}
+
+section:nth-of-type(2n+1) {
+    background-color: black;
+    z-index: -1;
+}
+
+#Nav ul {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 2;
+    top: -15px;
+    left: 0px;
+    list-style-type: none;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    border-radius: 0 20px 20px 0px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#Nav li {
+    padding: 0 10px 100px 0px;
+    font-size: 25px;
+    font-family: 'Mukta', sans-serif;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    color: rgba(255, 251, 0, 0.4);
+    font-size: 28px;
+}
+
+#heading-1 {
+    font-family: 'Koulen', cursive;
+    margin: auto;
+    display: inline;
+    text-align: center;
+    font-size: 160px;
+    width: 100%;
+    text-shadow: 4px 4px rgb(201, 201, 201);
+    z-index: 1;
+    animation: Heading 5s infinite;
+}
+
+
+
+@keyframes Heading {
+    0% {
+        text-shadow: 0px 0px rgb(255, 255, 255);
+    }
+
+    25% {
+        text-shadow: 0px 20px red;
+
+    }
+
+    30% {
+        /* border-right: 10px solid yellow; */
+        /* border-radius: 30px; */
+    }
+
+    50% {
+        text-shadow: 0px -20px blue;
+        font-size: 180px;
+    }
+
+    90% {
+        text-shadow: 0px 0px rgb(255, 255, 255);
+        /* border-radius: 50px; */
+    }
+
+    100% {
+        border: 0px solid rgba(red, green, blue, alpha);
+
+    }
+}
+
+
+
+#Home {
+    height: 100vh;
+    display: flex;
+    right: 0px;
+}
+
+#Home::before {
+    content: "";
+    background-image: url(https://www.pinclipart.com/picdir/big/32-328811_nusr-et-home-onion-clip-art-black-and.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    filter: invert(100);
+    opacity: 30%;
+    background-position: center;
+    transform: rotate(20deg);
+}
+
+#Home::after {
+    content: "";
+    background-image: url(https://img.cppng.com/download/2020-06/67422-king-hamburger-cheeseburger-veggie-burger-drawing.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+    background-position: right;
+    z-index: 1;
+}
+
+
+#Menu {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(236, 68, 68);
+    padding-bottom: 100px;
+    padding-left: 150px;
+    max-width: 100%;
+    /* flex-wrap: wrap; */
+
+
+
+}
+
+#Menu>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.burger img {
+    /* width: 220px; */
+    width: 60%;
+    height: 220px;
+}
+
+
+.burger:hover .overlay {
+    opacity: 1;
+    z-index: 1;
+}
+
+.Overlay-text ul {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    /* top: 20%; */
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 5%);
+    text-align: center;
+    list-style-type: none;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+    /* margin: auto; */
+    /* max-width: 100%; */
+    width: 20%;
+    height: 45%;
+    opacity: 0;
+    transition: ease;
+    background-color: #008CBA;
+    z-index: 1;
+}
+
+.burger-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* p:hover {
+    opacity: 0;
+} */
+
+.menu h1 {
+    flex-wrap: wrap;
+    width: 10%;
+
+}
+
+
+
+#Contact {
+    height: 100vh;
+    text-align: center;
+
+
+}
+
+#Hours {
+    padding-top: 100px;
+    display: inline-block;
+
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 200px;
+    width: 100%;
+    align-items: flex-start;
+
+}
+
+
+.Phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 450px; */
+}
+
+#Menu h1,
+#Contact h1 h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+#customer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    height: 450px;
+    width: 12%;
+    align-items: center;
+}
+
+#comments {
+    display: flex;
+    flex-direction: row;
+}
+
+.form {
+    padding-bottom: 20px;
+}
+
+#name,
+#number,
+#txt {
+    border: 2px solid rgba(255, 251, 0, 0.4);
+    border-radius: 10px;
+    /* width: 130%; */
+}
+
+#name,
+#number {
+    height: 30px;
+}
+
