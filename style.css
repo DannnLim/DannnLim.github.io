@@ -100,6 +100,7 @@ li a:hover {
     height: 100vh;
     display: flex;
     right: 0px;
+
 }
 
 #Home::before {
@@ -113,6 +114,7 @@ li a:hover {
     opacity: 30%;
     background-position: center;
     transform: rotate(20deg);
+
 }
 
 #Home::after {
@@ -125,6 +127,7 @@ li a:hover {
     opacity: 40%;
     background-position: right;
     z-index: 1;
+
 }
 
 
@@ -277,4 +280,3 @@ li a:hover {
 #number {
     height: 30px;
 }
-
